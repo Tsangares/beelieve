@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Beelieve:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Beelieve_jar</output-path>
+    <root id="archive" name="Beelieve_jar.jar">
+      <element id="module-output" name="Beelieve" />
+      <element id="extracted-dir" path="/usr/lib/jvm/java-18-openjdk/lib/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/lib/jvm/java-18-openjdk/lib/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/lib/jvm/java-18-openjdk/lib/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/lib/jvm/java-18-openjdk/lib/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/lib/jvm/java-18-openjdk/lib/javafx.graphics.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/lib/jvm/java-18-openjdk/lib/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/lib/jvm/java-18-openjdk/lib/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/lib/jvm/java-18-openjdk/lib/javafx.web.jar" path-in-jar="/" />
+      <element id="dir-copy" path="/usr/lib/jvm/java-11-openjfx" />
+    </root>
+  </artifact>
+</component>

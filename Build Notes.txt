@@ -1,0 +1,54 @@
+0.008:
+Dec 26 2014
+Multiple objects with the same name can be saved. Currently there is a need for there to be a discrepency between saved objects and items. I decided to make a build before implmenting the changes. The goal is to have each map have a different and editable name. That way each item can belong to certain maps. 
+
+0.007:
+Dec 14 2014
+Lot of work done. Side bar updated. Resolution management is updated. Now it can work on any resolution screen. The intro was fixed a bit. Now all objects get scaled when using the correct class. Css updated. Currently working on inside hive map. Saved updated to supply multiple objects with the same name. New written log created. It is much more detailed but it is not virtual. Its more for personal use. I am under the impression that the frame rate is lowered though.
+
+0.006:
+Dec 07 2014
+Updated the window. Its now one unit, by using the JFXPanel to place it into a Frame instead of using stage I can create polygon windows instead of just squares. I may use that to my advantage later. But I have to remember I am working on a smaller platform. Thats going to be a wierd switch. I fixed some bugs. A new method of creating objects is now implemented. I no longer need to explicitly declare objects when I create them, now I can pass as a variable the class type to later create it. implemented in the save, store and map module. Game is ready for content. All of the infustruction besides player actions have been built. Enough to start making a game. I am excited.
+
+0.005:
+Dec 05 2014
+Wow that was a lot of work. Took me like month and only about 11 hours to complete saves. Now that I am done with that I incorperated a main menu, that loads the save. I also put in a image and a video, so the main menu is very pleasant. Not yet asthetically pleasing but its good right now. I will update that later.
+Now finally I can start building the content of the game. I also revised the store, made it better and let it contain objects to buy. I also setup purchasing in the game. Next steps, purchasing items from store and placing them onto the ground. 
+
+0.004:
+Nov 14 2014
+I fixed some display issues, made it look a bit nicer. Then I also just implemented the player and the shop class.
+Not even close to being done. Work for content can now start.
+
+0.003:
+Nov 8 2014
+I setup so when someone right clicks on objects it will select that object and put it in the display menu.
+I also simplified the adding and removal of items in the map class and by consequence in the background class.
+Items can now be added to the 3 lists: objectHolderLIst, ItemList, and the background matrix easily. And removed.
+Breifly looked at effects for when an object is highlighted.
+Will implement it directly into the item class because it already extends the imageview class.
+Significant enough changes for me to make a new build. 
+
+0.002:
+Nov 8 2014
+Finally concluded what I am going to do with scaling.
+The game is going to have two settings.
+800x500 and 1600x1000.
+Because I am not experienced enough to understand resolution settings.
+Also because I did get the screenshot effect to work.
+But it came with enough lag or it was too slow to work.
+Again not enough experience to do something else, so i concluded that its better just to move on and have two settings. I am going to start developing in 1600x1000 because that is more native, and later I will add a low res setting at 800x500 and change all the graphics bit. If I finish the game maybe I will have learned by then what I should be doing. 
+For keeps sake here is the code for the screenshot scaling:
+                WritableImage scaled = new WritableImage((int)(WIDTH), (int)(HEIGHT));
+                if(false) {
+                    workingScene.snapshot(scaled);
+                    Image output = scaled;
+                    ImageView myImage = new ImageView(output);
+                    myImage.setScaleX(SCALE);
+                    myImage.setScaleY(SCALE);
+                    myImage.setLayoutX(WIDTH - WIDTH / SCALE);
+                    myImage.setLayoutY(HEIGHT - HEIGHT / SCALE);
+                    outputGroup.getChildren().clear();
+                    outputGroup.getChildren().add(myImage);
+                }
+I am done here.
